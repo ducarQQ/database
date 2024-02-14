@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>問い合わせ一覧</title>
+        <link rel="stylesheet" href="css/default.css">
+    </head>
+    <body>
+        <h1>問い合わせ一覧画面</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>名前</th>
+                    <th>メールアドレス</th>
+                    <th>問い合わせ内容</th>
+                    <th>回答</th>
+                    <th>登録日</th>
+                    <th>更新日</th>
+                </tr>
+            </thead>
+            <tbody>
+<!-- [loop] !-->
+                <tr>
+                    <td>###id###</td>
+                    <td><a href="inquiry_detail.php?id=###id###">###name###</a></td>
+                    <td>###mail###</td>
+                    <td>###detail###</td>
+                    <td>###answer###</td>
+                    <td>###created_at###</td>
+                    <td>###updated_at###</td>
+                </tr>
+<!-- [/loop] !-->
+            </tbody>
+        </table>
+    </body>
+</html>

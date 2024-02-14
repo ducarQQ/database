@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>お問い合わせ回答確認</title>
+        <link rel="stylesheet" href="default.css">
+    </head>
+    <body>
+        <h1>お問い合わせ回答確認画面</h1>
+        <span>お名前:</span>
+        <span>###name###</span>
+        <br />
+        <span>メールアドレス:</span>
+        <span>###mail###</span>
+        <br />
+        <span>お問い合わせ内容:</span>
+        <span>###detail###</span>
+        <br />
+        <span>回答:</span>
+        <span>###answer###</span>
+        <br />
+        <span>お問い合わせ日時:</span>
+        <span>###created_at###</span>
+        <br />
+        <span>回答日時:</span>
+        <span>###updated_at###</span>
+        <br />
+
+        <form action="answer_complete.php">
+            <button type="submit">回答送信</button>
+            <input type="hidden" name="id" value="###id###">
+            <button formaction="inquiry_detail.php">回答入力に戻る</button>
+        </form>
+    </body>
+</html>
